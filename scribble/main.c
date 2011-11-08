@@ -7,16 +7,30 @@
 //
 
 #include <stdio.h>
+#include "scribble.h"
+
 
 int main (int argc, const char * argv[])
 {
 
     // insert code here...
     int i;
+    char *bork;
+    FILE *fd;
+    
+    fd=fopen("snift.txt", "r");
+    
     printf("Hello, World!\n");
-    for (i=0; i<5; i++) {
+    /*for (i=0; i<5; i++) {
         printf("\nLooky: %d", i);
-    }   
+    }*/
+    i=paul_fgets(100,bork,fd);
+    
+    if (i==-1) {
+        printf("\nError from fgets\n");
+    } else {
+        printf("\nWTF? It worked?\n");
+    }
     
     printf("\n");
     
