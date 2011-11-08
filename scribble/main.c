@@ -7,8 +7,10 @@
 //
 
 #include <stdio.h>
+#include <unistd.h>
 #include "scribble.h"
 
+extern int errno;
 
 int main (int argc, const char * argv[])
 {
@@ -18,10 +20,10 @@ int main (int argc, const char * argv[])
     char *bork;
     FILE *fd;
     
-    fd=fopen("snift.txt", "r");
+    fd=fopen("/Users/wackyvorlon/snift.txt", "r");
     
     if (fd==NULL) {
-        printf("\nFailed to open file.\n");
+        printf("\nFailed to open file. Reason: %d\n", errno);
     }
     
     printf("Hello, World!\n");
@@ -32,9 +34,14 @@ int main (int argc, const char * argv[])
     
     if (i==-1) {
         printf("\nError from fgets\n");
+        printf("\nNumber: %d\n",errno);
     } else {
         printf("\nWTF? It worked?\n");
     }
+    
+    fclose(fd); /* Lets close up and call 'er a day. */
+    
+    printf("\n Now, do we have magic? See: %s\n", bork);
     
     printf("\n");
     
