@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "scribble.h"
 
 int paul_fgets(int num, char *buf, FILE *fd)

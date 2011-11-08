@@ -20,6 +20,10 @@ int main (int argc, const char * argv[])
     
     fd=fopen("snift.txt", "r");
     
+    if (fd==NULL) {
+        printf("\nFailed to open file.\n");
+    }
+    
     printf("Hello, World!\n");
     /*for (i=0; i<5; i++) {
         printf("\nLooky: %d", i);
