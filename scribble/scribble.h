@@ -9,6 +9,6 @@
 #ifndef scribble_scribble_h
 #define scribble_scribble_h
 
-
+int paul_fgets(int num, char *buf, FILE fd)
 
 #endif
