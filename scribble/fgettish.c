@@ -22,4 +22,6 @@ int paul_fgets(int num, char *buf, FILE fd)
         /*Yarp! Couldn't allocate memory! */
         return -1;
     }
+    
+    return 0; /*In case of success. */
 }
