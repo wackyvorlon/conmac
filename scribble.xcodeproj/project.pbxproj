@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		450C6202146973AC00687F78 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 450C6201146973AC00687F78 /* main.c */; };
 		450C6204146973AC00687F78 /* scribble.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 450C6203146973AC00687F78 /* scribble.1 */; };
+		450C620C14697D5D00687F78 /* fgettish.c in Sources */ = {isa = PBXBuildFile; fileRef = 450C620B14697D5D00687F78 /* fgettish.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		450C61FD146973AC00687F78 /* scribble */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = scribble; sourceTree = BUILT_PRODUCTS_DIR; };
 		450C6201146973AC00687F78 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		450C6203146973AC00687F78 /* scribble.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = scribble.1; sourceTree = "<group>"; };
+		450C620A14697D4B00687F78 /* scribble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scribble.h; sourceTree = "<group>"; };
+		450C620B14697D5D00687F78 /* fgettish.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fgettish.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +63,9 @@
 		450C6200146973AC00687F78 /* scribble */ = {
 			isa = PBXGroup;
 			children = (
+				450C620A14697D4B00687F78 /* scribble.h */,
 				450C6201146973AC00687F78 /* main.c */,
+				450C620B14697D5D00687F78 /* fgettish.c */,
 				450C6203146973AC00687F78 /* scribble.1 */,
 			);
 			path = scribble;
@@ -118,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				450C6202146973AC00687F78 /* main.c in Sources */,
+				450C620C14697D5D00687F78 /* fgettish.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
